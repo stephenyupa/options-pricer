@@ -18,6 +18,7 @@ add_library(options_pricer STATIC
     src/black_scholes.cpp
     src/monte_carlo.cpp
     src/binomial_tree.cpp
+    src/fd_pricer.cpp
 )
 target_include_directories(options_pricer PUBLIC include)
 
@@ -42,4 +43,8 @@ if(BUILD_TESTS)
     add_executable(test_parity tests/test_parity.cpp)
     target_link_libraries(test_parity PRIVATE options_pricer)
     add_test(NAME test_parity COMMAND test_parity)
+
+    add_executable(test_fd_pricer tests/test_fd_pricer.cpp)
+    target_link_libraries(test_fd_pricer PRIVATE options_pricer)
+    add_test(NAME test_fd_pricer COMMAND test_fd_pricer)
 endif()
