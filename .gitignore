@@ -2,3 +2,7 @@ build/
 build_debug/
 *.o
 *.a
+*.dylib
+*.so
+julia/Manifest.toml
+julia/test/Manifest.toml

@@ -1,0 +1,7 @@
+name = "OptionsPricer"
+uuid = "ecc68ba6-08ed-4afe-839a-3b3e027deada"
+authors = ["Stephen Yupa"]
+version = "0.1.0"
+
+[compat]
+julia = "1.9"
